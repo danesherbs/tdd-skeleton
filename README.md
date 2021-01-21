@@ -11,7 +11,7 @@
 ## Test structure
 
 ### Given, When, Then
-Improves readability of test cases, especially when there are many tests.
+Improves the readability of test cases, especially when there are many.
 
 ❌
 ```python
