@@ -1,17 +1,22 @@
-# Test Driven Development (TDD) Exercise
+# Test Driven Development (TDD)
 
-## TDD
-
-### Red, Green, Refactor
-- <span style="color:red"><b>FAIL</b></span>. Write a failing test.
-- <span style="color:green"><b>PASS</b></span>. Write the minimal amount of code for the test to pass.
-- <span style="color:orange"><b>REFACTOR</b></span>. Refactor if needed.
+## The TDD loop: Red, Green, Refactor.
+- Write a failing test.
+- Write the minimal amount of code for the test to pass.
+- Refactor (if needed).
 
 ### Advantages
 
 - Gives confidence when refactoring; tests act as a safety harness.
 
-### Given, When, Then
+### Tips
+
+- Keep tests small
+  - Avoids big slow tests
+- Keep tests independent from one another
+  - Interdependent tests are brittle and hard to maintain
+
+### Test structure: Given, When, Then
 
 ```python
 def test_dog_makes_woof_sound():
