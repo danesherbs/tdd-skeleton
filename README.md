@@ -23,6 +23,47 @@ def test_dog_makes_woof_sound():
   assertTrue("woof" in dog.sounds())
 ```
 
+### Keep tests small
+❌
+```python
+def test_dog_makes_sounds():
+  # Given
+  dog = Dog()
+  
+  # When
+  dog.bark()
+  dog.sniff()  # takes a very long time
+  
+  # Then
+  assertTrue("woof" in dog.sounds())
+  assertTrue("sniff" in dog.sounds())
+```
+
+✅
+```python
+def test_dog_makes_woof_sound():
+  # Given
+  dog = Dog()
+  
+  # When
+  dog.bark()
+  
+  # Then
+  assertTrue("woof" in dog.sounds())
+  
+
+def test_dog_makes_sniff_sound():
+  # Given
+  dog = Dog()
+  
+  # When
+  dog.sniff()  # takes a very long time
+  
+  # Then
+  assertTrue("sniff" in dog.sounds())
+```
+
+You can now test the `woof` behaviour independently of the `sniff` behaviour.
+
 ### Other tips
-- Keep tests small (avoids big slow tests)
 - Keep tests independent from one another (interdependent tests are brittle and hard to maintain)
