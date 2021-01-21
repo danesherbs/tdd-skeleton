@@ -11,7 +11,7 @@
 
 ## Test structure
 
-### Given, When, Then
+### Use Given-When-Then
 Improves the readability of test cases, especially when there are many.
 
 ❌
