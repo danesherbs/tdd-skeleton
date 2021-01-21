@@ -97,7 +97,7 @@ def test_dog_makes_sniff_sound():
   dog.sniff()
   
   # Then
-  assertEqual(dog.sounds(), ["sniff"])  # actual: ["woof", "sniff"]
+  assertEqual(dog.sounds(), ["sniff"])  # Failure: actual: ["woof", "sniff"]
 ```
   
 ✅
