@@ -8,8 +8,9 @@
 
 - Gives confidence when refactoring; tests act as a safety harness.
 
-## Test structure: Given, When, Then
+## Test structure
 
+### Given, When, Then
 ```python
 def test_dog_makes_woof_sound():
   # Given
@@ -22,5 +23,6 @@ def test_dog_makes_woof_sound():
   assertTrue("woof" in dog.sounds())
 ```
 
+### Other tips
 - Keep tests small (avoids big slow tests)
 - Keep tests independent from one another (interdependent tests are brittle and hard to maintain)
