@@ -6,8 +6,9 @@
 
 ## Advantages
 
-- Gives confidence when refactoring; tests act as a safety harness.
-- Interface is written before the implementation, forcing [design by contract](https://en.wikipedia.org/wiki/Design_by_contract)
+- Tests give confidence when refactoring since they act as a safety harness.
+- Brittle tests are quickly found in the refactoring part of the TDD loop, leading to an overall less brittle test suite.
+- Emergent design
 
 ## Test structure
 
