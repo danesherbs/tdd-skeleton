@@ -33,7 +33,7 @@ def test_dog_makes_woof_sound():
 ```
 
 
-### Keep tests small
+### Test one behaviour at a time
 Allows you to test behaviours independently of one another.
 
 Makes debugging easier when test cases are failing.
