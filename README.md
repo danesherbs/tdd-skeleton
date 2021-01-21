@@ -77,5 +77,51 @@ def test_dog_makes_sniff_sound():
   assertTrue("sniff" in dog.sounds())
 ```
 
-### Other tips
-- Keep tests independent from one another (interdependent tests are brittle and hard to maintain)
+### Keep tests independent
+Independent tests are easier to reason about.
+
+❌
+```python
+
+dog = Dog()
+
+def test_dog_makes_woof_sound():
+  # When
+  dog.bark()
+  
+  # Then
+  assertEqual(dog.sounds(), ["woof"])
+
+def test_dog_makes_sniff_sound():
+  # When
+  dog.sniff()
+  
+  # Then
+  assertEqual(dog.sounds(), ["sniff"])  # actual: ["woof", "sniff"]
+```
+  
+✅
+```python
+def test_dog_makes_woof_sound():
+  # Given
+  dog = Dog()
+  
+  # When
+  dog.bark()
+  
+  # Then
+  assertEqual(dog.sounds(), ["woof"])
+  
+
+def test_dog_makes_sniff_sound():
+  # Given
+  dog = Dog()
+  
+  # When
+  dog.sniff()
+  
+  # Then
+  assertEqual(dog.sounds(), ["sniff"])
+```
+
+
