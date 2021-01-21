@@ -11,6 +11,15 @@
 ## Test structure
 
 ### Given, When, Then
+Improves readability of test cases, especially when there are many tests.
+
+❌
+```python
+def test_dog_makes_woof_sound():
+  assertTrue("woof" in Dog().bark().sounds())
+```
+
+✅
 ```python
 def test_dog_makes_woof_sound():
   # Given
@@ -23,8 +32,13 @@ def test_dog_makes_woof_sound():
   assertTrue("woof" in dog.sounds())
 ```
 
+
 ### Keep tests small
-❌ 
+Allows you to test behaviours independently of one another.
+
+Makes debugging easier when test cases are failing.
+
+❌
 ```python
 def test_dog_makes_sounds():
   # Given
@@ -39,7 +53,6 @@ def test_dog_makes_sounds():
   assertTrue("sniff" in dog.sounds())
 ```
   
-
 ✅
 ```python
 def test_dog_makes_woof_sound():
@@ -63,8 +76,6 @@ def test_dog_makes_sniff_sound():
   # Then
   assertTrue("sniff" in dog.sounds())
 ```
-
-You can now test the `woof` behaviour independently of the `sniff` behaviour.
 
 ### Other tips
 - Keep tests independent from one another (interdependent tests are brittle and hard to maintain)
