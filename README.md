@@ -38,6 +38,8 @@ Allows you to test behaviours independently of one another.
 
 Makes debugging easier when test cases are failing.
 
+Tests are easier to read and understand.
+
 ❌
 ```python
 def test_dog_makes_sounds():
