@@ -9,13 +9,6 @@
 
 - Gives confidence when refactoring; tests act as a safety harness.
 
-### Tips
-
-- Keep tests small
-  - Avoids big slow tests
-- Keep tests independent from one another
-  - Interdependent tests are brittle and hard to maintain
-
 ### Test structure: Given, When, Then
 
 ```python
@@ -29,3 +22,8 @@ def test_dog_makes_woof_sound():
   # Then
   assertTrue("woof" in dog.sounds())
 ```
+
+### Tips
+
+- Keep tests small (avoids big slow tests)
+- Keep tests independent from one another (interdependent tests are brittle and hard to maintain)
