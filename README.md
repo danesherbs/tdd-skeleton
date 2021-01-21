@@ -24,7 +24,7 @@ def test_dog_makes_woof_sound():
 ```
 
 ### Keep tests small
-❌
+❌ 
 ```python
 def test_dog_makes_sounds():
   # Given
@@ -32,12 +32,13 @@ def test_dog_makes_sounds():
   
   # When
   dog.bark()
-  dog.sniff()  # takes a very long time
+  dog.sniff()
   
   # Then
   assertTrue("woof" in dog.sounds())
   assertTrue("sniff" in dog.sounds())
 ```
+  
 
 ✅
 ```python
@@ -57,7 +58,7 @@ def test_dog_makes_sniff_sound():
   dog = Dog()
   
   # When
-  dog.sniff()  # takes a very long time
+  dog.sniff()
   
   # Then
   assertTrue("sniff" in dog.sounds())
