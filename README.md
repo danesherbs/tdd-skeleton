@@ -7,8 +7,8 @@
 ## Advantages
 
 - Tests give confidence when refactoring since they act as a safety harness.
-- Brittle tests are quickly found in the refactoring part of the TDD loop, leading to an overall less brittle test suite.
-- Emergent design
+- Brittle tests are quickly found in the refactoring step of the TDD loop.
+- Following the TDD loop results in an emergent design, which is often preferred over a plan-then-implement design.
 
 ## Test structure
 
