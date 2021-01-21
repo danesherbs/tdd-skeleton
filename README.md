@@ -7,6 +7,7 @@
 ## Advantages
 
 - Gives confidence when refactoring; tests act as a safety harness.
+- Interface is written before the implementation, forcing [design by contract](https://en.wikipedia.org/wiki/Design_by_contract)
 
 ## Test structure
 
