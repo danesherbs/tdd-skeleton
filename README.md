@@ -3,9 +3,9 @@
 ## TDD
 
 ### Red, Green, Refactor
-- Write a failing test.
-- Write the minimal amount of code for the test to pass.
-- Refactor if needed.
+- <span style="color:red"><b>FAIL</b></span>. Write a failing test.
+- <span style="color:green"><b>PASS</b></span>. Write the minimal amount of code for the test to pass.
+- <span style="color:orange"><b>REFACTOR</b></span>. Refactor if needed.
 
 ### Advantages
 
